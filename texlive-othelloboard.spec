@@ -1,3 +1,9 @@
+# revision 23714
+# category Package
+# catalog-ctan /macros/latex/contrib/othelloboard
+# catalog-date 2011-08-19 08:35:26 +0200
+# catalog-license lppl1.3
+# catalog-version 1.2
 Name:		texlive-othelloboard
 Version:	1.2
 Release:	1
@@ -44,6 +50,7 @@ standard to WZebra (and other programs) is also supported.
 %doc %{_texmfdistdir}/doc/latex/othelloboard/example-rose-chps1-2.tex
 %doc %{_texmfdistdir}/doc/latex/othelloboard/othelloboard.pdf
 %doc %{_texmfdistdir}/doc/latex/othelloboard/othelloboard.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +61,5 @@ standard to WZebra (and other programs) is also supported.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
