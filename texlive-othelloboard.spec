@@ -6,7 +6,7 @@
 # catalog-version 1.2
 Name:		texlive-othelloboard
 Version:	1.2
-Release:	10
+Release:	11
 Summary:	Typeset Othello (Reversi) diagrams of any size, with annotations
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/othelloboard
